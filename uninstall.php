@@ -1,21 +1,31 @@
 <?php
 /**
- * Uninstall handler for __PLUGIN_NAME__.
+ * Uninstall Script
  *
- * Runs when the plugin is deleted from Plugins → Installed Plugins. Deactivation
- * alone does NOT trigger this file. Clean up all plugin data (database tables,
- * options, transients, cron hooks) so the site is returned to the state it
- * was in before the plugin was installed.
+ * Removes all plugin data when the plugin is deleted.
  *
- * @package __PLUGIN_PACKAGE__
+ * @package Unstoppable_Product_Sorting
  */
 
-defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
+// If uninstall not called from WordPress, exit.
+if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+    exit;
+}
 
-// Example cleanup — adjust as the plugin grows:
-//
-// delete_option( '__prefix___settings' );
-// delete_option( '__prefix___db_version' );
-//
-// global $wpdb;
-// $wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}__prefix___my_table" );
+global $wpdb;
+
+// Delete custom table.
+// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+$upso_table_name = $wpdb->prefix . 'upso_product_order';
+// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter
+$wpdb->query( "DROP TABLE IF EXISTS {$upso_table_name}" );
+
+// Delete options.
+delete_option( 'upso_db_version' );
+delete_option( 'upso_affect_all_loops' );
+delete_option( 'upso_install_date' );
+delete_option( 'upso_welcome_notice_dismissed' );
+delete_option( 'upso_review_notice_dismissed' );
+
+// Clear any transients.
+delete_transient( 'upso_product_count' );

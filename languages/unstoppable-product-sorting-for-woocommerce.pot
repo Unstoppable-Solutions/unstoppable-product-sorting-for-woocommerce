@@ -1,0 +1,345 @@
+# Copyright (C) 2024 Unstoppable Solutions
+# This file is distributed under the same license as the Unstoppable Product Sorting for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Unstoppable Product Sorting for WooCommerce 1.0.5\n"
+"Report-Msgid-Bugs-To: https://unstoppablesolutions.app/support\n"
+"POT-Creation-Date: 2024-12-31 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Options Studio"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Dashboard"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Your suite of WooCommerce enhancement tools by Unstoppable Solutions."
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "No plugins registered yet."
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Open"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Visit Unstoppable Solutions"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Get Support"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Product Sorting"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Drag-and-drop product sorting for WooCommerce."
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Sort Products"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Settings"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Unstoppable Product Sorting for Woo requires WooCommerce to be installed and activated."
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Plugin Activation Error"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "Unstoppable Product Sorting for Woo"
+msgstr ""
+
+#: unstoppable-product-sorting-for-woocommerce.php
+msgid "requires WooCommerce to be installed and activated."
+msgstr ""
+
+#: includes/class-ups-helpers.php
+msgid "Select a Category"
+msgstr ""
+
+#: includes/class-ups-helpers.php
+msgid "All Products"
+msgstr ""
+
+#: includes/class-ups-helpers.php
+msgid "By Category"
+msgstr ""
+
+#: includes/class-ups-helpers.php
+msgid "Security check failed."
+msgstr ""
+
+#: includes/class-ups-helpers.php
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Saving..."
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Changes saved!"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Save Changes?"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Are you sure you want to save the new product order?"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Save Changes"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Loading..."
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Load More Products"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "All products loaded"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "No products to save."
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Failed to save product order."
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Product order saved successfully!"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Sort Products"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Welcome to Unstoppable Product Sorting!"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Drag and drop products to reorder them. Click \"Save Changes\" when done."
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Enjoying Unstoppable Product Sorting? Please leave a review to help others discover the plugin!"
+msgstr ""
+
+#: includes/class-ups-admin.php
+msgid "Leave a Review"
+msgstr ""
+
+#: views/admin-page.php
+msgid "Rate Plugin"
+msgstr ""
+
+#: views/admin-page.php
+msgid "Close"
+msgstr ""
+
+#: views/template-parts/tab-all-products.php
+msgid "Found %s products"
+msgstr ""
+
+#: views/template-parts/tab-all-products.php
+msgid "Drag products to reorder"
+msgstr ""
+
+#: views/template-parts/tab-all-products.php
+msgid "Showing %1$s of %2$s products"
+msgstr ""
+
+#: views/template-parts/tab-all-products.php
+msgid "Tip: Click on multiple products to select them, then drag to move them together."
+msgstr ""
+
+#: views/template-parts/tab-all-products.php
+msgid "No Products Found"
+msgstr ""
+
+#: views/template-parts/tab-all-products.php
+msgid "Add some products to your WooCommerce store to start sorting them."
+msgstr ""
+
+#: views/template-parts/tab-all-products.php
+msgid "Add Product"
+msgstr ""
+
+#: views/template-parts/tab-category-products.php
+msgid "Found %1$s products in \"%2$s\""
+msgstr ""
+
+#: views/template-parts/tab-category-products.php
+msgid "No products found in the \"%s\" category."
+msgstr ""
+
+#: views/template-parts/tab-category-products.php
+msgid "Choose a product category from the dropdown above to sort products within that category."
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Product Display Settings"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Choose where your custom product sort order should be applied."
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Apply Sorting To"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Category Pages Only"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Recommended"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Custom sort order only applies to product category archive pages."
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "All Product Loops"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Applies to category pages, shortcodes, and other product displays."
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Save Settings"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "How It Works"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "This is the recommended setting for most stores. Your custom product order will appear on:"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Product category archive pages"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Choose this if you want sorting to apply everywhere, including:"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Product category pages"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "WooCommerce shortcodes"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Note:"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Using \"All Product Loops\" may slightly impact performance on sites with many shortcodes or custom product queries."
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Troubleshooting"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Custom order not showing on Shop page?"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Go to Appearance → Customize → WooCommerce → Product Catalog"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Set \"Default Product Sorting\" to \"Default sorting (custom ordering + name)\""
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "Changes not saving with many products?"
+msgstr ""
+
+#: views/template-parts/tab-settings.php
+msgid "If you have a large number of products and changes are not saving, contact your hosting provider to increase:"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "SKU:"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "In Stock"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "Out of Stock"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "Move to top"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "Move up"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "Move down"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "Move to bottom"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "View product"
+msgstr ""
+
+#: views/template-parts/product-item.php
+msgid "Edit product"
+msgstr ""
