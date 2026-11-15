@@ -9,7 +9,6 @@
  * Text Domain: unstoppable-product-sorting-for-woocommerce
  * Domain Path: /languages
  * Requires at least: 5.8
- * Tested up to: 7.1
  * Requires PHP: 7.4
  * WC requires at least: 7.0
  * WC tested up to: 10.4
