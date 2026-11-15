@@ -3,7 +3,7 @@
  * Plugin Name: Unstoppable Product Sorting for WooCommerce
  * Plugin URI: https://unstoppablesolutions.app/plugins/unstoppable-product-sorting-for-woocommerce
  * Description: Take full control of your WooCommerce product display order with intuitive drag-and-drop sorting for shop pages and categories.
- * Version: 1.0.9
+ * Version: 1.0.11
  * Author: Unstoppable Solutions
  * Author URI: https://unstoppablesolutions.app
  * Text Domain: unstoppable-product-sorting-for-woocommerce
@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Define plugin constants
  */
 if ( ! defined( 'UPSO_VERSION' ) ) {
-    define( 'UPSO_VERSION', '1.0.9' );
+    define( 'UPSO_VERSION', '1.0.11' );
 }
 
 if ( ! defined( 'UPSO_PLUGIN_DIR' ) ) {
