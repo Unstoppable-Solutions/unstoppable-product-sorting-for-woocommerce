@@ -3,7 +3,7 @@ Contributors: paramedic192
 Donate link: https://unstoppablesolutions.app
 Tags: woocommerce, product sorting, drag and drop, reorder, product order
 Requires at least: 5.8
-Tested up to: 7.1
+Tested up to: 7.1.4
 Requires PHP: 7.4
 Stable tag: 1.0.11
 WC requires at least: 7.0
