@@ -27,6 +27,7 @@ Take full control of your WooCommerce product display order with intuitive drag-
 = Features =
 
 * **Drag-and-Drop Sorting** - Intuitive interface for easy product reordering
+* **Product Search** - Quickly find products by name or SKU in large catalogs
 * **Sort All Products** - Arrange products on your main shop page
 * **Sort by Category** - Set custom order for each product category
 * **Multi-Select** - Click to select multiple products and move them together
