@@ -5,7 +5,7 @@ Tags: woocommerce, product sorting, drag and drop, reorder, product order
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 WC requires at least: 7.0
 WC tested up to: 10.4
 License: GPL-2.0-or-later
@@ -99,6 +99,11 @@ The plugin works with standard WooCommerce templates. Some page builders have th
 4. Quick action buttons for moving products
 
 == Changelog ==
+= 1.1.1 =
+* Fixed checkmark icon alignment in Save Changes button
+* Updated Get Support link to WordPress.org support forum
+* Fixed Rate Plugin link to use correct plugin slug
+
 = 1.1.0 =
 * NEW: Product search/filter functionality in the sorting interface
 * Quickly find products by name or SKU without scrolling
