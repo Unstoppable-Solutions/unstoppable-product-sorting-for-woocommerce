@@ -36,10 +36,10 @@ $upso_tabs        = UPSO_Helpers::get_tabs();
         <?php endforeach; ?>
 
         <div class="ups-header-links">
-            <a href="https://wordpress.org/support/plugin/unstoppable-product-sorting/reviews/#new-post" target="_blank" class="ups-header-link">
+            <a href="https://wordpress.org/support/plugin/unstoppable-product-sorting-for-woocommerce/reviews/#new-post" target="_blank" class="ups-header-link">
                 ⭐ <?php esc_html_e( 'Rate Plugin', 'unstoppable-product-sorting-for-woocommerce' ); ?>
             </a>
-            <a href="https://unstoppablesolutions.app/support" target="_blank" class="ups-header-link">
+            <a href="https://wordpress.org/support/plugin/unstoppable-product-sorting-for-woocommerce/" target="_blank" class="ups-header-link">
                 🧑‍💻 <?php esc_html_e( 'Get Support', 'unstoppable-product-sorting-for-woocommerce' ); ?>
             </a>
         </div>
