@@ -164,6 +164,104 @@
     height: 16px;
 }
 
+/* Product Search */
+.ups-product-search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ups-bg-white);
+    border: 1px solid var(--ups-border);
+    border-radius: var(--ups-radius);
+    padding: 6px 12px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ups-product-search-wrapper:focus-within {
+    border-color: var(--ups-primary);
+    box-shadow: 0 0 0 1px var(--ups-primary);
+}
+
+.ups-product-search-wrapper .dashicons-search {
+    color: var(--ups-text-light);
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.ups-product-search {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+    padding: 4px 0;
+    width: 200px;
+}
+
+.ups-product-search::placeholder {
+    color: #a7aaad;
+}
+
+.ups-product-search-clear {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    color: var(--ups-text-light);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ups-product-search-clear.visible {
+    display: flex;
+}
+
+.ups-product-search-clear:hover {
+    color: var(--ups-error);
+}
+
+.ups-product-search-clear .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Search Match States */
+.ups-product-item.search-hidden {
+    display: none !important;
+}
+
+.ups-product-item.search-match .ups-product-name {
+    background: linear-gradient(to right, #fff9c4 0%, transparent 100%);
+    padding: 2px 4px;
+    margin: -2px -4px;
+    border-radius: 2px;
+}
+
+/* Search Stats */
+.ups-search-stats {
+    font-size: 13px;
+    color: var(--ups-text-light);
+    margin-left: 15px;
+}
+
+.ups-search-stats.no-results {
+    color: var(--ups-error);
+}
+
+.ups-search-stats .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.ups-drag-hint.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 /* ==========================================================================
    Products List
    ========================================================================== */

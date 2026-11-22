@@ -58,6 +58,17 @@ remove_filter( 'posts_orderby', $upso_orderby_callback, 10 );
                 ?>
             </div>
             <div class="ups-toolbar-actions">
+                <div class="ups-product-search-wrapper">
+                    <span class="dashicons dashicons-search"></span>
+                    <input type="text"
+                           class="ups-product-search"
+                           placeholder="<?php esc_attr_e( 'Search products...', 'unstoppable-product-sorting-for-woocommerce' ); ?>"
+                           autocomplete="off">
+                    <button type="button" class="ups-product-search-clear" title="<?php esc_attr_e( 'Clear search', 'unstoppable-product-sorting-for-woocommerce' ); ?>">
+                        <span class="dashicons dashicons-no-alt"></span>
+                    </button>
+                </div>
+                <span class="ups-search-stats" style="display: none;"></span>
                 <span class="ups-drag-hint">
                     <span class="dashicons dashicons-move"></span>
                     <?php esc_html_e( 'Drag products to reorder', 'unstoppable-product-sorting-for-woocommerce' ); ?>

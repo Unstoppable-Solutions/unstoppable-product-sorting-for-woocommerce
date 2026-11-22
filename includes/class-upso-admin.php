@@ -121,6 +121,8 @@ class UPSO_Admin {
                     'loading'        => __( 'Loading...', 'unstoppable-product-sorting-for-woocommerce' ),
                     'load_more'      => __( 'Load More Products', 'unstoppable-product-sorting-for-woocommerce' ),
                     'no_more'        => __( 'All products loaded', 'unstoppable-product-sorting-for-woocommerce' ),
+                    'showing'        => __( 'Showing', 'unstoppable-product-sorting-for-woocommerce' ),
+                    'of'             => __( 'of', 'unstoppable-product-sorting-for-woocommerce' ),
                 ),
                 'debug'    => defined( 'WP_DEBUG' ) && WP_DEBUG,
             )

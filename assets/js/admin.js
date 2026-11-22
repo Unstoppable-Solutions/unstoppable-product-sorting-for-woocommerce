@@ -23,6 +23,7 @@
             this.initSortable();
             this.bindEvents();
             this.initDropdown();
+            this.initProductSearch();
             this.initNotices();
         },
 
@@ -297,22 +298,22 @@
          */
         resetCategorySearch: function() {
             var $dropdown = $('.ups-dropdown-content');
-            
+
             $dropdown.find('.ups-category-search').val('');
             $dropdown.find('.ups-search-clear').hide();
             $dropdown.find('.ups-no-results').hide();
             $dropdown.find('.ups-category-tree-wrapper').show();
             $dropdown.find('.ups-category-item').removeClass('search-hidden search-match');
-            
+
             // Restore original expanded states - collapse items that were expanded by search
             $dropdown.find('.ups-category-item.has-children').each(function() {
                 var $item = $(this);
                 var $wrapper = $item.find('> .ups-children-wrapper');
                 var $icon = $item.find('> .ups-category-row .ups-expand-toggle .dashicons');
-                
+
                 // Check if this item has a selected child (should stay expanded)
                 var hasSelectedChild = $item.hasClass('has-selected-child') || $item.find('.selected').length > 0;
-                
+
                 if (hasSelectedChild) {
                     $wrapper.show();
                     $item.addClass('expanded');
@@ -323,6 +324,113 @@
                     $icon.removeClass('dashicons-arrow-down-alt2').addClass('dashicons-arrow-right-alt2');
                 }
             });
+        },
+
+        /**
+         * Initialize Product Search
+         */
+        initProductSearch: function() {
+            var self = this;
+
+            // Product search input
+            $(document).on('input', '.ups-product-search', function() {
+                self.filterProducts($(this).val());
+            });
+
+            // Clear search button
+            $(document).on('click', '.ups-product-search-clear', function(e) {
+                e.preventDefault();
+                var $wrapper = $(this).closest('.ups-toolbar-actions');
+                $wrapper.find('.ups-product-search').val('').focus();
+                self.resetProductSearch();
+            });
+
+            // ESC key to clear search
+            $(document).on('keydown', '.ups-product-search', function(e) {
+                if (e.key === 'Escape') {
+                    $(this).val('');
+                    self.resetProductSearch();
+                }
+            });
+        },
+
+        /**
+         * Filter products by search term
+         *
+         * @param {string} searchTerm Search term
+         */
+        filterProducts: function(searchTerm) {
+            var $products = $('.ups-product-item');
+            var $clearBtn = $('.ups-product-search-clear');
+            var $searchStats = $('.ups-search-stats');
+
+            searchTerm = searchTerm.toLowerCase().trim();
+
+            // Show/hide clear button
+            if (searchTerm.length > 0) {
+                $clearBtn.css('display', 'flex');
+            } else {
+                $clearBtn.hide();
+            }
+
+            // Reset if empty search
+            if (searchTerm.length === 0) {
+                this.resetProductSearch();
+                return;
+            }
+
+            var matchCount = 0;
+            var totalCount = $products.length;
+
+            // Filter products
+            $products.each(function() {
+                var $item = $(this);
+                var productName = $item.find('.ups-product-name').text().toLowerCase();
+                var productSku = $item.find('.ups-product-sku').text().toLowerCase();
+                var isMatch = productName.indexOf(searchTerm) !== -1 || productSku.indexOf(searchTerm) !== -1;
+
+                if (isMatch) {
+                    matchCount++;
+                    $item.removeClass('search-hidden').addClass('search-match');
+                } else {
+                    $item.removeClass('search-match').addClass('search-hidden');
+                }
+            });
+
+            // Update search stats
+            if (matchCount < totalCount) {
+                $searchStats.html(
+                    '<span class="dashicons dashicons-filter"></span> ' +
+                    upso_ajax.i18n.showing + ' <strong>' + matchCount + '</strong> ' + upso_ajax.i18n.of + ' ' + totalCount
+                ).show();
+            } else {
+                $searchStats.hide();
+            }
+
+            // Disable sorting while filtering (SortableJS doesn't work well with hidden items)
+            if (this.sortable && matchCount < totalCount) {
+                this.sortable.option('disabled', true);
+                $('.ups-drag-hint').addClass('disabled');
+            }
+        },
+
+        /**
+         * Reset product search
+         */
+        resetProductSearch: function() {
+            var $products = $('.ups-product-item');
+            var $clearBtn = $('.ups-product-search-clear');
+            var $searchStats = $('.ups-search-stats');
+
+            $products.removeClass('search-hidden search-match');
+            $clearBtn.hide();
+            $searchStats.hide();
+
+            // Re-enable sorting
+            if (this.sortable) {
+                this.sortable.option('disabled', false);
+                $('.ups-drag-hint').removeClass('disabled');
+            }
         },
 
         /**
